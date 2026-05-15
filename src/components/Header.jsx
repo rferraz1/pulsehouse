@@ -1,4 +1,4 @@
-import { Activity, ArrowRight } from 'lucide-react';
+import { Activity, ArrowRight, Phone } from 'lucide-react';
 
 function Header({ navItems, mobileOpen, setMobileOpen, MenuIcon, CloseIcon }) {
   const closeMenu = () => setMobileOpen(false);
@@ -6,6 +6,15 @@ function Header({ navItems, mobileOpen, setMobileOpen, MenuIcon, CloseIcon }) {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-pulse-black/72 backdrop-blur-2xl">
+      <div className="border-b border-white/10 bg-pulse-mint/[0.08]">
+        <div className="container-pad flex min-h-10 items-center justify-center gap-2 py-2 text-center text-sm font-bold text-pulse-fog sm:justify-end">
+          <Phone size={15} className="shrink-0 text-pulse-mint" />
+          <span>Felipe Andrade</span>
+          <a href="tel:+5521991251651" className="text-pulse-mint transition hover:text-white">
+            21 99125-1651
+          </a>
+        </div>
+      </div>
       <nav className="container-pad flex h-20 items-center justify-between">
         <a href="#inicio" onClick={closeMenu} className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-pulse-mint/35 bg-pulse-mint/12 text-pulse-mint shadow-glow">

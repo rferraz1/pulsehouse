@@ -99,7 +99,7 @@ function App() {
       />
 
       <main className="relative z-10">
-        <section id="inicio" className="relative min-h-screen overflow-hidden pt-28">
+        <section id="inicio" className="relative min-h-screen overflow-hidden pt-40">
           <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-pulse-mint/10 to-transparent" />
           <div className="container-pad grid min-h-[calc(100vh-7rem)] items-center gap-14 pb-16 lg:grid-cols-[1.05fr_.95fr]">
             <motion.div initial="hidden" animate="visible" variants={fadeUp} transition={{ duration: 0.75 }}>
