@@ -7,11 +7,16 @@ function Header({ navItems, mobileOpen, setMobileOpen, MenuIcon, CloseIcon }) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-pulse-black/72 backdrop-blur-2xl">
       <div className="border-b border-white/10 bg-pulse-mint/[0.08]">
-        <div className="container-pad flex min-h-10 items-center justify-center gap-2 py-2 text-center text-sm font-bold text-pulse-fog sm:justify-end">
-          <Phone size={15} className="shrink-0 text-pulse-mint" />
-          <span>Felipe Andrade</span>
-          <a href="https://wa.me/5521991251651" target="_blank" rel="noreferrer" className="text-pulse-mint transition hover:text-white">
-            21 99125-1651
+        <div className="container-pad flex min-h-10 flex-wrap items-center justify-center gap-x-5 gap-y-2 py-2 text-center text-sm font-bold text-pulse-fog sm:justify-end">
+          <a href="https://wa.me/5521991251651" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-pulse-fog transition hover:text-white">
+            <Phone size={15} className="shrink-0 text-pulse-mint" />
+            <span>Felipe Andrade</span>
+            <span className="text-pulse-mint">21 99125-1651</span>
+          </a>
+          <a href="https://wa.me/5521970074044" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-pulse-fog transition hover:text-white">
+            <Phone size={15} className="shrink-0 text-pulse-mint" />
+            <span>Felipe Robaina</span>
+            <span className="text-pulse-mint">21 97007-4044</span>
           </a>
         </div>
       </div>
