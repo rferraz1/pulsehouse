@@ -10,7 +10,7 @@ function Header({ navItems, mobileOpen, setMobileOpen, MenuIcon, CloseIcon }) {
         <div className="container-pad flex min-h-10 items-center justify-center gap-2 py-2 text-center text-sm font-bold text-pulse-fog sm:justify-end">
           <Phone size={15} className="shrink-0 text-pulse-mint" />
           <span>Felipe Andrade</span>
-          <a href="tel:+5521991251651" className="text-pulse-mint transition hover:text-white">
+          <a href="https://wa.me/5521991251651" target="_blank" rel="noreferrer" className="text-pulse-mint transition hover:text-white">
             21 99125-1651
           </a>
         </div>
